@@ -1,0 +1,15 @@
+create database VBoxData;
+use VBoxData;
+create table ITRequest(
+ReqID int primary key auto_increment,
+ReqName varchar(255),
+ReqDate date,
+ReqEmail varchar(255),
+ReqType varchar(255),
+ReqDetails varchar(255)
+);
+
+select * from ITRequest;
+
+INSERT INTO ITRequest (ReqName, ReqDate, ReqEmail, ReqType, ReqDetails)
+VALUES ('request', '2024-02-02', 'abc@gmail.com', 'dont know', 'abcdede');
